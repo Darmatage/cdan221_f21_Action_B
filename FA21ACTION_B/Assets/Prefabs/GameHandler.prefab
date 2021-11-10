@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5089085416704153079}
   - component: {fileID: 3604240985246594283}
+  - component: {fileID: 7032672001444477584}
   m_Layer: 0
   m_Name: GameHandler
   m_TagString: GameHandler
@@ -47,3 +48,26 @@ MonoBehaviour:
   healthText: {fileID: 0}
   tokensText: {fileID: 0}
   isDefending: 0
+--- !u!114 &7032672001444477584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017643076528142017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ad410d37fd55754ba5b77b5adb31240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CookBookMenu: {fileID: 0}
+  spicyIng1image: {fileID: 0}
+  spicyIng2image: {fileID: 0}
+  healIng1image: {fileID: 0}
+  healIng2image: {fileID: 0}
+  healIng3image: {fileID: 0}
+  spicyIng1Txt: {fileID: 0}
+  spicyIng2Txt: {fileID: 0}
+  healIng1Txt: {fileID: 0}
+  healIng2Txt: {fileID: 0}
+  healIng3Txt: {fileID: 0}
