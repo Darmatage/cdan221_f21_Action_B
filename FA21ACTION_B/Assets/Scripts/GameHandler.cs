@@ -55,10 +55,10 @@ public class GameHandler : MonoBehaviour {
             tokensTextTemp.text = "GOLD: " + gotTokens;
       }
 
-      public void playerDies(){
-            player.GetComponent<PlayerHurt>().playerDead();
-            StartCoroutine(DeathPause());
-      }
+      //public void playerDies(){
+        //    player.GetComponent<PlayerHurt>().playerDead();
+        //    StartCoroutine(DeathPause());
+      //}
 
       IEnumerator DeathPause(){
             player.GetComponent<PlayerMove>().isAlive = false;
