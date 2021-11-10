@@ -16,7 +16,7 @@ public class GameHandler : MonoBehaviour {
 
       public bool isDefending = false;
 
-      public static bool stairCaseUnlocked = false;
+      //public static bool stairCaseUnlocked = false;
       //this is a flag check. Add to other scripts: GameHandler.stairCaseUnlocked = true;
 
       void Start(){
@@ -55,10 +55,10 @@ public class GameHandler : MonoBehaviour {
             tokensTextTemp.text = "GOLD: " + gotTokens;
       }
 
-      //public void playerDies(){
-        //    player.GetComponent<PlayerHurt>().playerDead();
-        //    StartCoroutine(DeathPause());
-      //}
+      public void playerDies(){
+            player.GetComponent<PlayerHurt>().playerDead();
+            StartCoroutine(DeathPause());
+      }
 
       IEnumerator DeathPause(){
             player.GetComponent<PlayerMove>().isAlive = false;

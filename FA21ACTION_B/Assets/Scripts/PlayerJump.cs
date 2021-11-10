@@ -33,12 +33,13 @@ public class PlayerJump : MonoBehaviour {
       }
 
       public bool IsGrounded() {
-            Collider2D groundCheck = Physics2D.OverlapCircle(feet.position, 2f, groundLayer);
-            Collider2D enemyCheck = Physics2D.OverlapCircle(feet.position, 2f, enemyLayer);
+		  Debug.Log("Can you see me?");
+            Collider2D groundCheck = Physics2D.OverlapCircle(feet.position, 0.1f, groundLayer);
+            Collider2D enemyCheck = Physics2D.OverlapCircle(feet.position, 0.1f, enemyLayer);
            if ((groundCheck != null) || (enemyCheck != null)) {
                   return true;
-                  //Debug.Log("I can jump now!");
-            }
+                  Debug.Log("I can jump now!");
+			} else {Debug.Log("no can jump :("); return false;}
             return false;
       }
 }
