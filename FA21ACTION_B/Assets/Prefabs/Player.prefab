@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 2708301892160061042}
   - component: {fileID: 3543974729795516869}
   - component: {fileID: 9006275628238479239}
-  - component: {fileID: 3864529866443574455}
+  - component: {fileID: 4382737881028877545}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -251,13 +251,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackPt: {fileID: 4564238323571317186}
-  attackRange: 0.5
+  attackRange: 0.75
   attackRate: 2
   attackDamage: 40
   Enemies:
     serializedVersion: 2
-    m_Bits: 0
---- !u!114 &3864529866443574455
+    m_Bits: 128
+--- !u!114 &4382737881028877545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -266,9 +266,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2708301892160061033}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b295811372e639a489bdcc5481926590, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bdca7f703e67284da159b7244c1eb59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb2D: {fileID: 0}
 --- !u!1 &5610211322623478185
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +294,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5610211322623478185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.89, y: 0, z: 0}
+  m_LocalPosition: {x: -1.31, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2708301892160061038}
