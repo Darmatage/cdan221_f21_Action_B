@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyMeleeDamage : MonoBehaviour {
 
       //public Animator anim;
+	   public bool enemyFrozen = false;
        public GameObject healthLoot;
        public int maxHealth = 10;
        public int currentHealth;
@@ -20,6 +21,27 @@ public class EnemyMeleeDamage : MonoBehaviour {
                      Die();
               }
        }
+	   
+	   public void ParalizeEnemy(string pType){
+		   if (pType == "spicy"){
+			   //anim.setBool("ParalizedSpicy", true);
+			   enemyFrozen = true;
+			   //turn off enemy movement: have the script look to this script 
+			   
+		   }
+		   
+		   else if (pType == "freeze"){
+			   //anim.setBool("ParalizedFrozen", true);
+			   enemyFrozen = true;
+			   //turn off enemy movement
+		   }
+		   
+		   else if (pType == "full"){
+				//anim.setBool("ParalizedFull", true);
+				enemyFrozen = true;
+				//turn off enemy movement
+		   }
+	   }
 
        void Die(){
               Instantiate (healthLoot, transform.position, Quaternion.identity);

@@ -288,7 +288,7 @@ MonoBehaviour:
   haveFood: 0
   loadedFood: {fileID: 0}
   thrust: 100
-  spicyAttack: {fileID: 6411297499485015491, guid: 5bf4ae6f32c3498468fcdb3a71e6aba2, type: 3}
+  spicyAttack: {fileID: 6411297499485015491, guid: 5926e73476097c24dbb5a30670141282, type: 3}
 --- !u!1 &5610211322623478185
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7778021629979296765}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.643, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2708301892160061038}
