@@ -22,7 +22,7 @@ public class EnemyMeleeDamage : MonoBehaviour {
        }
 
        void Die(){
-              //Instantiate (healthLoot, transform.position, Quaternion.identity);
+              Instantiate (healthLoot, transform.position, Quaternion.identity);
               //anim.SetBool ("isDead", true);
               GetComponent<Collider2D>().enabled = false;
               this.enabled = false;
