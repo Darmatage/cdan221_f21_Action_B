@@ -66,6 +66,7 @@ public class GameInventory : MonoBehaviour {
 
 
 	public GameHandler gameHandler;
+	public GameObject thePlayer;
 	public int healingAmt = 10;
 
 
@@ -75,6 +76,10 @@ public class GameInventory : MonoBehaviour {
 		ButtonSpicyAttack.SetActive(false);
 		ButtonHealingPie.SetActive(false);
 		//gameHandler = transform.GetComponent<GameHandler>();
+		if (GameObject.FindGameObjectWithTag ("Player") != null) {
+			thePlayer = GameObject.FindGameObjectWithTag ("Player");
+		}
+		
     }
 
 	void Update(){
@@ -205,12 +210,12 @@ public class GameInventory : MonoBehaviour {
 		InventoryRemove("healingpie");
 	}
 
-	public void ServeSpicyAttack(){
-		//check if player canThrow = false. If so:
-		InventoryRemove("spicypopper");
-		//instantiate spicypopper prefab into slot over player head
-		//activate player canThrow, load prefab
-	}
-
-	 
+	public void ServeSpicyAttack(){	
+		if (thePlayer.GetComponent<PlayerThrowAttack>().haveFood == false){
+			InventoryRemove("spicypopper");
+			thePlayer.GetComponent<PlayerThrowAttack>().LoadFood("spicypopper");
+			Debug.Log("spicy projectile ready!");
+		}
+		else {Debug.Log("You already have a projectile loaded");}
+	} 
 }
