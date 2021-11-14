@@ -11,8 +11,8 @@ public class GameHandler : MonoBehaviour {
       public int StartPlayerHealth = 100;
       public GameObject healthText;
 
-      public static int gotTokens = 0;
-      public GameObject tokensText;
+      //public static int gotTokens = 0;
+      //public GameObject tokensText;
 
       public bool isDefending = false;
 
@@ -25,25 +25,26 @@ public class GameHandler : MonoBehaviour {
             updateStatsDisplay();       
       }
 
-      public void playerGetTokens(int newTokens){
-            gotTokens += newTokens;
-            updateStatsDisplay();
-      }
+      //public void playerGetTokens(int newTokens){
+      //      gotTokens += newTokens;
+      //      updateStatsDisplay();
+      //}
 
       public void playerGetHit(int damage){
            if (isDefending == false){
                   playerHealth -= damage;
-                  updateStatsDisplay();
-                  player.GetComponent<PlayerHurt>().playerHit();
-            }
-
-           if (playerHealth >= StartPlayerHealth){
+				  
+				if (playerHealth >= StartPlayerHealth){
                   playerHealth = StartPlayerHealth;
-            }
-
-           if (playerHealth <= 0){
+				}
+				  
+				if (playerHealth <= 0){
                   playerHealth = 0;
                   playerDies();
+				}
+				  
+                  updateStatsDisplay();
+                  player.GetComponent<PlayerHurt>().playerHit();
             }
       }
 
@@ -51,8 +52,8 @@ public class GameHandler : MonoBehaviour {
             Text healthTextTemp = healthText.GetComponent<Text>();
             healthTextTemp.text = "HEALTH: " + playerHealth;
 
-            Text tokensTextTemp = tokensText.GetComponent<Text>();
-            tokensTextTemp.text = "GOLD: " + gotTokens;
+            //Text tokensTextTemp = tokensText.GetComponent<Text>();
+            //tokensTextTemp.text = "GOLD: " + gotTokens;
       }
 
       public void playerDies(){

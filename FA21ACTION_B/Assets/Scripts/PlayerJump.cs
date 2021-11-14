@@ -42,6 +42,6 @@ public class PlayerJump : MonoBehaviour {
 				//Debug.Log("no can jump :("); 
 				return false;
 			}
-            return false;
+            //return false;
       }
 }
