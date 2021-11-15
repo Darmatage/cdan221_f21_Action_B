@@ -31,7 +31,7 @@ public class PlayerThrowAttack : MonoBehaviour{
     public void LoadFood(string attack){
         if (haveFood==false){
 			if (attack=="spicypopper"){
-				loadedFood = Instantiate(spicyAttack, weaponPoint.position, Quaternion.identity);
+				loadedFood = Instantiate(spicyAttack, weaponPoint.position, weaponPoint.rotation);
 				loadedFood.transform.SetParent(weaponPoint);
 				DisableThrowComponents(loadedFood);
 				haveFood = true;
@@ -51,11 +51,24 @@ public class PlayerThrowAttack : MonoBehaviour{
     }
 
     public void ThrowFood(){
-        //add listener to throw food in current direction player is facing 
-		EnableThrowComponents(loadedFood);
-		Rigidbody2D rb = loadedFood.GetComponent<Rigidbody2D>();
+        //add listener to throw food in current direction player is facing
+
+		//Destroy(loadedFood);
+		//Debug.Log("I destroyed the static food");
+		//loadedFood = Instantiate(spicyAttack, weaponPoint.position, Quaternion.identity);
+		//Debug.Log("Character Direction: " + this.transform.rotation);
+		
 		loadedFood.transform.parent = null;   //loadedFood.transform.DetachChildren();
-		rb.AddForce(transform.forward * thrust); // meant to be in fixed update...? need impulse?
+		EnableThrowComponents(loadedFood);
+		
+		bool throwRight = GetComponent<PlayerMove>().FaceRight;
+		if (throwRight == true){
+			loadedFood.GetComponent<PickUp_Projectile>().throwDirection = -1;
+			Debug.Log("Throw Right = " + throwRight);
+		} else {
+			loadedFood.GetComponent<PickUp_Projectile>().throwDirection = 1;
+			Debug.Log("Throw Right = " + throwRight);
+		}
 		
 		haveFood = false;
     }
@@ -77,6 +90,5 @@ public class PlayerThrowAttack : MonoBehaviour{
 		attack.GetComponent<Rigidbody2D>().simulated = true;
 		attack.GetComponent<PickUp_Projectile>().enabled = true;
 	}
-	
 }
  
