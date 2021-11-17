@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CookBook: {fileID: 0}
-  ItemName: apple
+  ItemName: tomato
 --- !u!1 &6223523429339093123
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,7 +179,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 90
-  m_Sprite: {fileID: 21300000, guid: c3e73b4ca4f04eb40bd5be5ace334169, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 154bab0822c82424d83fb54a424ad38f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
