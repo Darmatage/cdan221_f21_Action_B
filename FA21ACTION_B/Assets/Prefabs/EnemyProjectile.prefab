@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameHandlerObj: {fileID: 5320178477546124669, guid: a5239f0d47855f84b80c1bb17e71008e, type: 3}
-  damage: 10
+  damage: 5
   speed: 15
   hitEffectAnim: {fileID: 0}
   SelfDestructTime: 2
