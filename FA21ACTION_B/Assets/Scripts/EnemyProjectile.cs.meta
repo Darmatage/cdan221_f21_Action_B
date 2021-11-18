@@ -3,7 +3,9 @@ guid: bd3dfb6b614f00046b1d96b8fae2c31c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - gameHandlerObj: {fileID: 5320178477546124669, guid: a5239f0d47855f84b80c1bb17e71008e, type: 3}
+  - hitEffectAnim: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

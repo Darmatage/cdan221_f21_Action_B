@@ -2063,6 +2063,7 @@ MonoBehaviour:
   spicyIng2Txt: {fileID: 5728819318433942402}
   spicyTxt: {fileID: 1247723534078769727}
   gameHandler: {fileID: 1867582011271817102}
+  thePlayer: {fileID: 2708301892160061033, guid: bb5ba55f58968ae4eb7ac75735fb5a22, type: 3}
   healingAmt: 10
 --- !u!1 &5174468064515960713
 GameObject:

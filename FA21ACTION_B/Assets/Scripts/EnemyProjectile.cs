@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyProjectile : MonoBehaviour {
 
        public GameHandler gameHandlerObj;
-       public int damage =1;
+       public int damage =10;
        public float speed = 10f;
        private Transform playerTrans;
        private Vector2 target;
@@ -33,8 +33,8 @@ public class EnemyProjectile : MonoBehaviour {
                      gameHandlerObj.playerGetHit(damage);
               }
               if (collision.gameObject.tag != "enemyShooter") {
-                     GameObject animEffect = Instantiate (hitEffectAnim, transform.position, Quaternion.identity);
-                     Destroy (animEffect, 0.5f);
+                     //GameObject animEffect = Instantiate (hitEffectAnim, transform.position, Quaternion.identity);
+                     //Destroy (animEffect, 0.5f);
                      Destroy (gameObject);
               }
        }
