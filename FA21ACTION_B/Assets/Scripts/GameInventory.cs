@@ -92,6 +92,11 @@ public class GameInventory : MonoBehaviour {
 			ButtonSpicyAttack.SetActive(true);}
 		else {ButtonSpicyAttack.SetActive(false);}
 		
+		
+		if (Input.GetKeyDown("1")){ServeSpicyAttack();}
+		//if (Input.GetKeyDown("2")){LoadFood("icecream");}
+		//if (Input.GetKeyDown("3")){LoadFood("meatball");}
+		
 	}
 
 

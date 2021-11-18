@@ -25,6 +25,7 @@ public class PlayerThrowAttack : MonoBehaviour{
 			}
 			else {Debug.Log("You don't have anything ready to throw");}
         }
+		
 	}
 	
 	
