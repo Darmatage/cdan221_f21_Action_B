@@ -1552,6 +1552,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2314055441276249202, guid: 9ba618d18f95f9e4b9a5008e3b1c9d7a, type: 3}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 4869793572053804974, guid: 9a9f74222d5df6e4f96fd9e7321f782d, type: 3}
     - target: {fileID: 2718562532793852032, guid: 9ba618d18f95f9e4b9a5008e3b1c9d7a, type: 3}
       propertyPath: gameHandlerObj
       value: 
