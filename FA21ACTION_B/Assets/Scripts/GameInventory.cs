@@ -9,6 +9,7 @@ public class GameInventory : MonoBehaviour {
     public GameObject CookBookMenu;
 	public GameObject ButtonHealingPie;
 	public GameObject ButtonSpicyAttack;
+	public GameObject ButtonSushi;
 	//public GameObject ButtonFreezeAttack;
 	//public GameObject ButtonTooFullAttack;
 	//public GameObject ButtonLordDish1;
@@ -28,6 +29,11 @@ public class GameInventory : MonoBehaviour {
       private static bool spicyIng2bool = false; // hotsauce
 	  private static bool spicybool = false; 	// hotpopper dish
 	  
+	  private static bool sushiIng1bool = false; // fish
+      private static bool sushiIng2bool = false; // seaweed
+      private static bool sushiIng3bool = false; // rice
+	  private static bool sushibool = false; 	 // sushi
+	  
 	//private static bool icebool = false; 		// ice 
 	//private static bool milkbool = false; 	// milk
 	//private static bool sugarbool = false; 	// sugar 
@@ -43,28 +49,44 @@ public class GameInventory : MonoBehaviour {
 	  private static int healIng2Num = 0;
 	  private static int healIng3Num = 0;
 	  private static int healNum = 0;
+	  
       private static int spicyIng1Num = 0;
 	  private static int spicyIng2Num = 0;
 	  private static int spicyNum = 0;
 
+	  private static int sushiIng1Num = 0;
+	  private static int sushiIng2Num = 0;
+	  private static int sushiIng3Num = 0;
+	  private static int sushiNum = 0;
+	  
       public GameObject healIng1image;
       public GameObject healIng2image;
       public GameObject healIng3image;
 	  public GameObject healButton;
+	  
       public GameObject spicyIng1image;
       public GameObject spicyIng2image;
 	  public GameObject spicyButton;
       
+	  public GameObject sushiIng1image;
+      public GameObject sushiIng2image;
+      public GameObject sushiIng3image;
+	  public GameObject sushiButton;
 
 	  public GameObject healIng1Txt;
 	  public GameObject healIng2Txt;
 	  public GameObject healIng3Txt;
 	  public GameObject healTxt;
+	  
 	  public GameObject spicyIng1Txt;
 	  public GameObject spicyIng2Txt;	  
 	  public GameObject spicyTxt;
 
-
+	  public GameObject sushiIng1Txt;
+	  public GameObject sushiIng2Txt;
+	  public GameObject sushiIng3Txt;
+	  public GameObject sushiTxt;
+	  
 	public GameHandler gameHandler;
 	public GameObject thePlayer;
 	public int healingAmt = 10;
@@ -92,6 +114,9 @@ public class GameInventory : MonoBehaviour {
 			ButtonSpicyAttack.SetActive(true);}
 		else {ButtonSpicyAttack.SetActive(false);}
 		
+		if ((sushiIng1Num >= 1) && (sushiIng2Num >= 1) && (sushiIng3Num >= 1)){
+			ButtonHealingPie.SetActive(true);}
+		
 		
 		if (Input.GetKeyDown("1")){ServeSpicyAttack();}
 		//if (Input.GetKeyDown("2")){LoadFood("icecream");}
@@ -109,29 +134,38 @@ public class GameInventory : MonoBehaviour {
 			if (spicyIng1bool == true) {spicyIng1image.SetActive(true);} else {spicyIng1image.SetActive(false);}
             if (spicyIng2bool == true) {spicyIng2image.SetActive(true);} else {spicyIng2image.SetActive(false);}
             if (spicybool == true) {spicyButton.SetActive(true);} else {spicyButton.SetActive(false);}
+		
+			if (sushiIng1bool == true) {sushiIng1image.SetActive(true);} else {sushiIng1image.SetActive(false);}
+            if (sushiIng2bool == true) {sushiIng2image.SetActive(true);} else {sushiIng2image.SetActive(false);}
+            if (sushiIng3bool == true) {sushiIng3image.SetActive(true);} else {sushiIng3image.SetActive(false);}
+            if (sushibool == true) {sushiButton.SetActive(true);} else {sushiButton.SetActive(false);}
 
             Text healIng1B = healIng1Txt.GetComponent<Text>();
             healIng1B.text = ("" + healIng1Num);
-
             Text healIng2B = healIng2Txt.GetComponent<Text>();
             healIng2B.text = ("" + healIng2Num);
-
             Text healIng3B = healIng3Txt.GetComponent<Text>();
-            healIng3B.text = ("" + healIng3Num);
-			
+            healIng3B.text = ("" + healIng3Num);			
 			Text healTxtB = healTxt.GetComponent<Text>();
             healTxtB.text = ("" + healNum);
 			
 			
             Text spicyIng1B = spicyIng1Txt.GetComponent<Text>();
-            spicyIng1B.text = ("" + spicyIng1Num);
-			
+            spicyIng1B.text = ("" + spicyIng1Num);			
             Text spicyIng2B = spicyIng2Txt.GetComponent<Text>();
             spicyIng2B.text = ("" + spicyIng2Num);
-
 			Text spicyTxtB = spicyTxt.GetComponent<Text>();
             spicyTxtB.text = ("" + spicyNum);
-			
+
+            Text sushiIng1B = sushiIng1Txt.GetComponent<Text>();
+            sushiIng1B.text = ("" + sushiIng1Num);
+            Text sushiIng2B = healIng2Txt.GetComponent<Text>();
+            sushiIng2B.text = ("" + sushiIng2Num);
+            Text sushiIng3B = sushiIng3Txt.GetComponent<Text>();
+            sushiIng3B.text = ("" + healIng3Num);			
+			Text sushiTxtB = sushiTxt.GetComponent<Text>();
+            sushiTxtB.text = ("" + sushiNum);
+		
       }
 
       public void InventoryAdd(string item){
@@ -142,8 +176,11 @@ public class GameInventory : MonoBehaviour {
 			else if (foundItemName == "healingpie") {healbool = true; healNum += 1;}
 			else if (foundItemName == "spicypopper") {spicybool = true; spicyNum += 1;}
 			else if (foundItemName == "jalapenos") {spicyIng1bool = true; spicyIng1Num += 1;}
-            else if (foundItemName == "hotsauce") {spicyIng2bool = true; spicyIng2Num += 1;}			
-						
+            else if (foundItemName == "hotsauce") {spicyIng2bool = true; spicyIng2Num += 1;}
+			else if (foundItemName == "fish") {sushiIng1bool = true; sushiIng1Num += 1;}
+			else if (foundItemName == "seaweed") {sushiIng2bool = true; sushiIng2Num += 1;}
+			else if (foundItemName == "hotsauce") {sushiIng3bool = true; sushiIng3Num += 1;}
+			
             InventoryDisplay();
       }
 
@@ -180,6 +217,22 @@ public class GameInventory : MonoBehaviour {
 				if (spicyNum <= 0){spicybool=false;}
 			}			
 			
+			if (itemRemove == "fish") {
+					sushiIng1Num -= 1;
+				if (sushiIng1Num <= 0){sushiIng1bool=false;}
+			}
+            else if (itemRemove == "seaweed") {
+					sushiIng2Num -= 1;
+				if (sushiIng2Num <= 0){sushiIng2bool=false;}
+			}
+            else if (itemRemove == "rice") {
+				sushiIng3Num -= 1;
+				if (sushiIng3Num <= 0){sushiIng3bool=false;}
+			}
+			else if (itemRemove == "sushi") {
+				sushiNum -= 1;
+				if (sushiNum <= 0){sushibool=false;}
+			}
 			
             InventoryDisplay();
       }
@@ -206,8 +259,15 @@ public class GameInventory : MonoBehaviour {
 		InventoryRemove("jalapenos");
 		InventoryRemove("hotsauce");
 		InventoryAdd("spicypopper");
+		
 	}
-	 
+	
+	public void CookSushi(){
+		InventoryRemove("fish");
+		InventoryRemove("seaweed");
+		InventoryRemove("rice");
+		InventoryAdd("sushi");
+	}
 
 	public void ServeHealingPie(){
 		Debug.Log("You hit the heal button!");
