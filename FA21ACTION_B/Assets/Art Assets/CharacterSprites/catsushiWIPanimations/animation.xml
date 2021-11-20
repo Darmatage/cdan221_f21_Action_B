@@ -1,0 +1,22 @@
+<animations>
+ <animation name="catsushi_Top">
+  <attrlinks>
+   <attrlink attr="offset.x" node="Drawing_4" value="17.502"/>
+   <attrlink attr="offset.y" node="Drawing_4" value="-87.49799999999999"/>
+   <attrlink attr="scale.x" node="Drawing_4" value="0.5927"/>
+   <attrlink attr="scale.y" node="Drawing_4" value="0.5927"/>
+   <attrlink attr="opacity" node="Drawing_4" value="1"/>
+   <attrlink attr="opacity" node="Drawing_1" value="1"/>
+   <attrlink attr="opacity" node="Drawing" value="1"/>
+   <attrlink attr="opacity" node="Drawing_3" value="1"/>
+   <attrlink attr="opacity" node="Drawing_2" value="1"/>
+   <attrlink attr="opacity" node="Drawing_5" value="1"/>
+   <attrlink attr="opacity" node="Drawing_6" value="1"/>
+   <attrlink attr="opacity" node="Drawing_7" value="1"/>
+   <attrlink attr="opacity" node="Drawing_8" value="1"/>
+   <attrlink attr="opacity" node="Drawing_9" value="1"/>
+   <attrlink attr="opacity" node="horizon" value="1"/>
+  </attrlinks>
+  <timedvalues/>
+ </animation>
+</animations>

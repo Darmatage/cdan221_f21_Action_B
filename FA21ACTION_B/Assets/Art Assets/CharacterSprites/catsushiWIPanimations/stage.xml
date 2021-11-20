@@ -1,0 +1,16 @@
+<stages>
+ <stage name="catsushi_catsushi">
+  <node groupId="0" skinId="0" name="Drawing_4" drwId="1"/>
+  <node groupId="0" skinId="0" name="Drawing_1" drwId="2"/>
+  <node groupId="0" skinId="0" name="Drawing" drwId="3"/>
+  <node groupId="0" skinId="0" name="Drawing_3" drwId="4"/>
+  <node groupId="0" skinId="0" name="Drawing_2" drwId="5"/>
+  <node groupId="0" skinId="0" name="Drawing_5" drwId="6"/>
+  <node groupId="0" skinId="0" name="Drawing_6" drwId="7"/>
+  <node groupId="0" skinId="0" name="Drawing_7" drwId="8"/>
+  <node groupId="0" skinId="0" name="Drawing_8" drwId="9"/>
+  <node groupId="0" skinId="0" name="Drawing_9" drwId="10"/>
+  <node groupId="0" skinId="0" name="horizon" drwId="11"/>
+  <play drawingAnimation="catsushi_Top" name="Top" skeleton="Top" animation="catsushi_Top"/>
+ </stage>
+</stages>
