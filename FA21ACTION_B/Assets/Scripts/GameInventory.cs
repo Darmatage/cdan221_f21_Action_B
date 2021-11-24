@@ -122,6 +122,8 @@ public class GameInventory : MonoBehaviour {
 		//if (Input.GetKeyDown("2")){LoadFood("icecream");}
 		//if (Input.GetKeyDown("3")){LoadFood("meatball");}
 		
+		if (Input.GetKeyDown("m")){CookBookMenu.SetActive(!CookBookMenu.activeSelf);}
+		
 	}
 
 
