@@ -1,0 +1,8 @@
+<animations>
+ <animation name="cattts_Top">
+  <attrlinks>
+   <attrlink attr="opacity" node="Drawing" value="1"/>
+  </attrlinks>
+  <timedvalues/>
+ </animation>
+</animations>
