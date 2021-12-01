@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerJump : MonoBehaviour {
 
-      //public Animator animator;
+      public Animator animator;
       public Rigidbody2D rb;
       public float jumpForce = 20f;
       public Transform feet;
@@ -21,7 +21,7 @@ public class PlayerJump : MonoBehaviour {
      void Update() {
            if ((Input.GetButtonDown("Jump")) && (IsGrounded()) && (isAlive==true)) {
                   Jump();
-               // animator.SetTrigger("Jump");
+                animator.SetTrigger("Jump");
                // JumpSFX.Play();
             }
       }
