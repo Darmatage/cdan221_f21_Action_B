@@ -203,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df63c43943c2ae64f8525a116772a9f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 2514080736707349953}
   rb2D: {fileID: 0}
   FaceRight: 1
   startSpeed: 10
