@@ -14,7 +14,7 @@ public class PlayerJump : MonoBehaviour {
       //public AudioSource JumpSFX;
 
       void Start(){
-            //animator = gameObject.GetComponentInChildren<Animator>();
+            animator = gameObject.GetComponentInChildren<Animator>();
             rb = GetComponent<Rigidbody2D>();
       }
 
