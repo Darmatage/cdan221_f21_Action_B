@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 8009a702156a25446bff15ce47bff030
+  - enabled: 1
+    path: Assets/Scenes/Pueblo.unity
+    guid: ceb7674eeb4755c44b690ccadddbf713
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -14,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End_Win.unity
     guid: 514729ad7e802944c9ac33b60e3b1c80
+  - enabled: 1
+    path: Assets/Scenes/End_Lose.unity
+    guid: 71ae7ff422d99c54380d85955c7e0cd1
   m_configObjects: {}

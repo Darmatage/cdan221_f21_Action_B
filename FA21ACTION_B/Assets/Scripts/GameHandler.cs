@@ -118,15 +118,16 @@ public class GameHandler : MonoBehaviour {
             SceneManager.LoadScene("EndLose");
       }
 
-      public void StartGame() {
-            SceneManager.LoadScene("Level1");
-      }
+	public void StartGame() {
+		Time.timeScale = 1f;
+		SceneManager.LoadScene("Pueblo");
+	}
 
-      public void RestartGame() {
-		  Time.timeScale = 1f;
-            SceneManager.LoadScene("MainMenu");
-            playerHealth = StartPlayerHealth;
-      }
+	public void RestartGame() {
+		Time.timeScale = 1f;
+		SceneManager.LoadScene("MainMenu");
+		playerHealth = StartPlayerHealth;
+	}
 
       public void QuitGame() {
                 #if UNITY_EDITOR

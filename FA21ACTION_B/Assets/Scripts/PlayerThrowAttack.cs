@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerThrowAttack : MonoBehaviour{
 	
-	//public Animator anim;
+	public Animator anim;
 	//public AudioSource throwSFX;
 	public Transform weaponPoint;
 	public bool haveFood = false; 
@@ -16,11 +16,15 @@ public class PlayerThrowAttack : MonoBehaviour{
 	//public GameObject freezeAttack;
 	//public GameObject fullAttack;		
 	
+	void Start(){
+        anim = gameObject.GetComponentInChildren<Animator>();
+	}
+	
 	void Update(){
 		if (Input.GetKeyDown("q")){
 			if (haveFood==true){
-                  ThrowFood();
-               // anim.SetTrigger("Throw");
+				ThrowFood();
+				anim.SetTrigger("Throw");
                // throwSFX.Play();
 			}
 			else {Debug.Log("You don't have anything ready to throw");}
