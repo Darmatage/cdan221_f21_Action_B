@@ -37,9 +37,9 @@ public class PlayerJump : MonoBehaviour {
             Collider2D enemyCheck = Physics2D.OverlapCircle(feet.position, 0.1f, enemyLayer);
            if ((groundCheck != null) || (enemyCheck != null)) {
                   return true;
-                  //Debug.Log("I can jump now!");
+                  Debug.Log("I can jump now!");
 			} else {
-				//Debug.Log("no can jump :("); 
+				Debug.Log("no can jump :("); 
 				return false;
 			}
             //return false;

@@ -200,6 +200,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2708301892160061037, guid: bb5ba55f58968ae4eb7ac75735fb5a22, type: 3}
+      propertyPath: m_Size.y
+      value: 0.4565512
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708301892160061037, guid: bb5ba55f58968ae4eb7ac75735fb5a22, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.20654353
+      objectReference: {fileID: 0}
     - target: {fileID: 2708301892160061038, guid: bb5ba55f58968ae4eb7ac75735fb5a22, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -210,7 +218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2708301892160061038, guid: bb5ba55f58968ae4eb7ac75735fb5a22, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.64
+      value: 2.14
       objectReference: {fileID: 0}
     - target: {fileID: 2708301892160061038, guid: bb5ba55f58968ae4eb7ac75735fb5a22, type: 3}
       propertyPath: m_LocalPosition.z
@@ -244,6 +252,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2708301892160061042, guid: bb5ba55f58968ae4eb7ac75735fb5a22, type: 3}
+      propertyPath: rb
+      value: 
+      objectReference: {fileID: 2084867008}
     - target: {fileID: 6797659054714610763, guid: bb5ba55f58968ae4eb7ac75735fb5a22, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -37730,6 +37742,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2279527584394672469, guid: 6c3969047cc78464eacddc3e97465d96, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2279527584394672469, guid: 6c3969047cc78464eacddc3e97465d96, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350650566472694649, guid: 6c3969047cc78464eacddc3e97465d96, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350650566472694649, guid: 6c3969047cc78464eacddc3e97465d96, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6350650566472694649, guid: 6c3969047cc78464eacddc3e97465d96, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6449440173984080169, guid: 6c3969047cc78464eacddc3e97465d96, type: 3}
       propertyPath: m_Name
       value: GameHandlerCanvas
