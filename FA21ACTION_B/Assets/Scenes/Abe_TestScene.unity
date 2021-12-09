@@ -934,6 +934,14 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5265878161807992252, guid: 6c3969047cc78464eacddc3e97465d96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -650.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 5265878161807992252, guid: 6c3969047cc78464eacddc3e97465d96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -354.17
+      objectReference: {fileID: 0}
     - target: {fileID: 6449440173984080169, guid: 6c3969047cc78464eacddc3e97465d96, type: 3}
       propertyPath: m_Name
       value: GameHandlerCanvas
