@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 201999965886947694}
   - component: {fileID: 201999965886947695}
+  - component: {fileID: 3621284423064043075}
   m_Layer: 7
   m_Name: Corn
   m_TagString: Untagged
@@ -83,6 +84,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &3621284423064043075
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201999965886947693}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bd0622eaf5a00d14f826a29156041869, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &201999966932146555
 GameObject:
   m_ObjectHideFlags: 0
@@ -246,6 +266,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyFrozen: 0
-  healthLoot: {fileID: 6223523428182248602, guid: a07cceac95b70b140aa2cbdeb3fada00, type: 3}
+  healthLoot: {fileID: 5091727071263071563, guid: b292d895f057c0a43a062e2f5e18ec96, type: 3}
   maxHealth: 10
   currentHealth: 0

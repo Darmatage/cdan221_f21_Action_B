@@ -45,9 +45,6 @@ TagManager:
   - name: BG_Sky
     uniqueID: 41143887
     locked: 0
-  - name: BG1
-    uniqueID: 2013339413
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
