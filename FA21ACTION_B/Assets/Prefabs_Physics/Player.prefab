@@ -119,10 +119,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
-  rb2D: {fileID: 0}
+  rb2D: {fileID: 2708301892160061039}
   FaceRight: 1
   startSpeed: 10
   isAlive: 1
+  Distance: 4
+  ClimbSpeed: 6
+  whatIsLadder:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!114 &2708301892160061042
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class GameHandler : MonoBehaviour {
       public static int playerHealth;
       public int StartPlayerHealth = 100;
       public GameObject healthText;
+	  public GameObject ButtonSceneCaves;
 
       //public static int gotTokens = 0;
       //public GameObject tokensText;
@@ -38,6 +39,7 @@ public class GameHandler : MonoBehaviour {
 
       void Start(){
 		   pauseMenuUI.SetActive(false);
+		   ButtonSceneCaves.SetActive(false);
             player = GameObject.FindWithTag("Player");
             playerHealth = StartPlayerHealth;
             updateStatsDisplay();       
@@ -71,7 +73,15 @@ public class GameHandler : MonoBehaviour {
                 volumeLevel = sliderValue;
         }
 
-
+		public void ButtonActiveCaves(){
+			ButtonSceneCaves.SetActive(true);
+		}
+		
+		public void ButtonInactiveCaves(){
+			ButtonSceneCaves.SetActive(false);
+		}
+		
+			
 
 
 
@@ -140,4 +150,9 @@ public class GameHandler : MonoBehaviour {
       public void Credits() {
             SceneManager.LoadScene("Credits");
       }
+	  
+	  public void ChangeSceneCaves() {
+		  SceneManager.LoadScene("PuebloCaves");
+	  }
+	  
 }

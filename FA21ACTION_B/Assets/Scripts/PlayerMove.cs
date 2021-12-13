@@ -12,10 +12,17 @@ public class PlayerMove : MonoBehaviour {
       public bool isAlive = true;
       //public AudioSource WalkSFX;
       private Vector3 hMove;
+	  public float Distance;
+	  public float ClimbSpeed;
+	  private float inputVertical;
+	  private bool isClimbing;
+	  public LayerMask whatIsLadder;
+	  
 
       void Start(){
            anim = gameObject.GetComponentInChildren<Animator>();
            rb2D = transform.GetComponent<Rigidbody2D>();
+		  
       }
 
       void Update(){
@@ -45,8 +52,26 @@ public class PlayerMove : MonoBehaviour {
       void FixedUpdate(){
             //slow down on hills / stops sliding from velocity
             if (hMove.x == 0){
-                  rb2D.velocity = new Vector2(rb2D.velocity.x / 1.1f, rb2D.velocity.y) ;
+                  rb2D.velocity = new Vector2(rb2D.velocity.x / 1.1f, rb2D.velocity.y);
             }
+			
+			RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.up, runSpeed, whatIsLadder);
+			
+			if(hitInfo.collider != null){
+				if(Input.GetKeyDown(KeyCode.UpArrow)){
+				isClimbing = true;}
+			} else {
+				isClimbing = false;
+				}
+			
+			if(isClimbing == true){
+				inputVertical = Input.GetAxis("Vertical");
+				rb2D.velocity = new Vector2(rb2D.velocity.x, inputVertical * ClimbSpeed);
+				rb2D.gravityScale = 0;
+			} else {
+				rb2D.gravityScale = 5;
+			}
+			 
       }
 
       private void playerTurn(){
