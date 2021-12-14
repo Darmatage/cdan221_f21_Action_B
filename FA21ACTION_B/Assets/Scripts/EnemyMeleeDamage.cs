@@ -14,27 +14,28 @@ public class EnemyMeleeDamage : MonoBehaviour {
               currentHealth = maxHealth;
        }
 
-       public void TakeDamage(int damage){
-              currentHealth -= damage;
-              //anim.SetTrigger ("Hurt");
-              if (currentHealth <= 0){
-                     Die();
-              }
-       }
+	public void TakeDamage(int damage){
+		//Debug.Log("The enemy received jalapenos damage");
+		currentHealth -= damage;
+		//anim.SetTrigger ("Hurt");
+		if (currentHealth <= 0){
+			Die();
+		}
+	}
 	   
-	   public void ParalizeEnemy(string pType){
-		   if (pType == "spicy"){
-			   //anim.setBool("ParalizedSpicy", true);
-			   enemyFrozen = true;
-			   //turn off enemy movement: have the script look to this script 
+	public void ParalizeEnemy(string pType){
+		if (pType == "spicy"){
+			//anim.setBool("ParalizedSpicy", true);
+			enemyFrozen = true;
+			//turn off enemy movement: have the script look to this script 
 			   
-		   }
+		}
 		   
-		   else if (pType == "freeze"){
-			   //anim.setBool("ParalizedFrozen", true);
-			   enemyFrozen = true;
-			   //turn off enemy movement
-		   }
+		else if (pType == "freeze"){
+			//anim.setBool("ParalizedFrozen", true);
+			enemyFrozen = true;
+			//turn off enemy movement
+		}
 		   
 		   else if (pType == "full"){
 				//anim.setBool("ParalizedFull", true);
@@ -47,7 +48,7 @@ public class EnemyMeleeDamage : MonoBehaviour {
               Instantiate (healthLoot, transform.position, Quaternion.identity);
               //anim.SetBool ("isDead", true);
               GetComponent<Collider2D>().enabled = false;
-              this.enabled = false;
+              //this.enabled = false;
               StartCoroutine(Death());
        }
 

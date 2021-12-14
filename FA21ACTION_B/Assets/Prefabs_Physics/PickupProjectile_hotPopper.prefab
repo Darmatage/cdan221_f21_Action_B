@@ -225,6 +225,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CookBook: {fileID: 0}
   ItemName: spicypopper
+  isHotPopper: 1
+  dmgHotPopper: 50
 --- !u!114 &5008957749562676044
 MonoBehaviour:
   m_ObjectHideFlags: 0

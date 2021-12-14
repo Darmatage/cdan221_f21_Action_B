@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFollow2DLERP : MonoBehaviour {
 
       public GameObject target;
-      public float camSpeed = 1.0f;
+      public float camSpeed = 4.0f;
 
       void Start(){
             target = GameObject.FindWithTag("Player");

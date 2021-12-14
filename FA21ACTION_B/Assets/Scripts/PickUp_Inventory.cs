@@ -7,8 +7,8 @@ public class PickUp_Inventory: MonoBehaviour {
 	public GameInventory CookBook;
 	public string ItemName = "item1";
 
-	public bool isJalepenos = false;
-	public int dmgJalepenos = 50;
+	public bool isHotPopper = false;
+	public int dmgHotPopper = 50;
 
 	void Awake(){
 		if (GameObject.FindWithTag("GameHandler") != null) {
@@ -36,8 +36,11 @@ public class PickUp_Inventory: MonoBehaviour {
 		
 			//check for enemies
 		if (other.gameObject.tag == "enemyShooter"){
-			if (isJalepenos==true){
-				other.gameObject.GetComponent<EnemyMeleeDamage>().TakeDamage(dmgJalepenos); 
+			//Debug.Log("enemyShooter hit a pickup"); 
+			if (isHotPopper==true){
+				other.gameObject.GetComponent<EnemyMeleeDamage>().TakeDamage(dmgHotPopper); 
+				//Debug.Log("The pickup was a jalepenos and did damage:" + dmgHotPopper);
+				Destroy(gameObject);
 			}
 			
 		}

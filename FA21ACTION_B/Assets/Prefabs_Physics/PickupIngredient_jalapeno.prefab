@@ -107,6 +107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CookBook: {fileID: 0}
   ItemName: jalapenos
+  isJalepenos: 1
+  dmgJalepenos: 50
 --- !u!1 &109142228308026243
 GameObject:
   m_ObjectHideFlags: 0
