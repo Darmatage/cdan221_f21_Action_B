@@ -17,19 +17,13 @@ public class PickUp_Inventory: MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
+
+		//check for player
 		if (other.gameObject.tag == "Player"){
 			//Debug.Log("You found an" + ItemName);
-			GetComponent<Collider2D>().enabled = false;
 			CookBook.InventoryAdd(ItemName);
-			//CookBook.removeObjectFromLevel(ItemName);
-			//Destroy(gameObject);
-		}
-			
-			//check for player
-		if (other.gameObject.tag == "Player"){
-			//Debug.Log("You found an" + ItemName);
 			GetComponent<Collider2D>().enabled = false;
-			CookBook.InventoryAdd(ItemName);
+			this.enabled = false;
 			//CookBook.removeObjectFromLevel(ItemName);
 			//Destroy(gameObject);
 		}	

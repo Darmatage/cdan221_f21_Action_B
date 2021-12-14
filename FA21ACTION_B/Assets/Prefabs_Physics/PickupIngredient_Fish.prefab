@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CookBook: {fileID: 0}
-  ItemName: Fish
+  ItemName: fish
   isHotPopper: 0
   dmgHotPopper: 50
 --- !u!1 &6223523429339093123
