@@ -8,6 +8,7 @@ TagManager:
   - enemyShooter
   - enemyMelee
   - PauseMenuSlider
+  - DialogueManager
   layers:
   - Default
   - TransparentFX
