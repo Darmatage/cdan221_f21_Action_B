@@ -20,7 +20,7 @@ public class DamageSlow : MonoBehaviour {
               if (isDamaging == true){
                      damageTimer += 0.1f;
                      if (damageTimer >= damageTime){
-                            gameHandlerObj.TakeDamage (damage);
+                            gameHandlerObj.playerGetHit (damage);
                             damageTimer = 0f;
                      }
               }
