@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
   rb: {fileID: 0}
-  jumpForce: 20
+  jumpForce: 10
   feet: {fileID: 7000702536848004911}
   groundLayer:
     serializedVersion: 2
