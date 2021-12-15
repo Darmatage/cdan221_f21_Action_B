@@ -15,10 +15,7 @@ public class NPCDialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start(){
 		dialogueBox.SetActive(false);
-
-        dialogueLength = dialogue.Length; //move into NPC script
-		Debug.Log("number of lines = " + dialogueLength); //move into NPC script
-		
+        dialogueLength = dialogue.Length;
     }
 
 	void Update(){
@@ -43,10 +40,9 @@ public class NPCDialogueManager : MonoBehaviour
 		counter = 0;					//reset counter
 	}
 
-	public void LoadDialogueArray(){
-	//not yet implemented:
-	//in order to have individual NPCDialogue scripts, load the array of contents into here
-
+	public void LoadDialogueArray(string[] NPCscript, int scriptLength){
+		dialogue = NPCscript;
+		dialogueLength = scriptLength;
 	}
 
 	//function for the button to display next line of dialogue

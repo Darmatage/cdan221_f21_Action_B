@@ -615,6 +615,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5091727071263071558, guid: b292d895f057c0a43a062e2f5e18ec96, type: 3}
   m_PrefabInstance: {fileID: 266957152}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1060698057
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6845847561121666086, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Name
+      value: NPC_chat2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: Hey!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: What are you doing with that wrench?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: Noooooooooo!!!!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
 --- !u!4 &1158016192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5091727071263071558, guid: 5a369dde2f5cb70468555cef40c4ff13, type: 3}
@@ -43635,7 +43708,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6845847561121666086, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_Name
-      value: NPC_chat
+      value: NPC_chat1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: Woah, is this working?
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_RootOrder
