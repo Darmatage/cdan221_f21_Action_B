@@ -14,6 +14,7 @@ public class DamageSlow : MonoBehaviour {
          if (GameObject.FindWithTag ("GameHandler") != null) {
             gameHandlerObj = GameObject.FindWithTag ("GameHandler").GetComponent<GameHandler>();
          }
+
        }
 
        void FixedUpdate(){
