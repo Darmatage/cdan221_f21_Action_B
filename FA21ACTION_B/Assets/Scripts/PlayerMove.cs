@@ -69,7 +69,7 @@ public class PlayerMove : MonoBehaviour {
 				rb2D.velocity = new Vector2(rb2D.velocity.x, inputVertical * ClimbSpeed);
 				rb2D.gravityScale = 0;
 			} else {
-				rb2D.gravityScale = 5;
+				rb2D.gravityScale = 1;
 			}
 			 
       }
