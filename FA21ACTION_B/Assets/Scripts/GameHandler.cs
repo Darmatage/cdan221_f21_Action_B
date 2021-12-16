@@ -160,4 +160,8 @@ public class GameHandler : MonoBehaviour {
 	   public void ChangeSceneMarsh() {
 		  SceneManager.LoadScene("Marsh");
 	  }
+	  
+	  public void ChangeScenePueblo() {
+		  SceneManager.LoadScene("Pueblo");
+	  }
 }
