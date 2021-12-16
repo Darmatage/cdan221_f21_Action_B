@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Marsh.unity
     guid: 41a2a87ae1f6a164393aa3d0988794de
+  - enabled: 1
+    path: Assets/Scenes/Pueblo.unity
+    guid: eb0b9532ebdcc304db9ffb081de40f72
   m_configObjects: {}
