@@ -511,7 +511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ccbe7a5357f1ec42be7df8c7c092c91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonScene: {fileID: 0}
+  ButtonScene: {fileID: 644919188}
 --- !u!61 &382206387
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1329,6 +1329,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c3969047cc78464eacddc3e97465d96, type: 3}
+--- !u!1 &644919188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3559281365279905334, guid: 6c3969047cc78464eacddc3e97465d96, type: 3}
+  m_PrefabInstance: {fileID: 644919187}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &647378700
 PrefabInstance:
   m_ObjectHideFlags: 0
