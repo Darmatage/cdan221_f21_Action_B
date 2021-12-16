@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 8009a702156a25446bff15ce47bff030
-  - enabled: 1
-    path: Assets/Scenes/Pueblo.unity
-    guid: ceb7674eeb4755c44b690ccadddbf713
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/End_Lose.unity
     guid: 71ae7ff422d99c54380d85955c7e0cd1
+  - enabled: 1
+    path: Assets/Scenes/Caves.unity
+    guid: 20ca39732fc7a5f448e4fb23e7200932
+  - enabled: 1
+    path: Assets/Scenes/Marsh.unity
+    guid: 41a2a87ae1f6a164393aa3d0988794de
   m_configObjects: {}
