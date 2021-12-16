@@ -3692,6 +3692,7 @@ MonoBehaviour:
   healthText: {fileID: 3165518053365346281}
   ButtonSceneCaves: {fileID: 6242811871390414560}
   ButtonSceneMarsh: {fileID: 8778307562918506193}
+  ButtonScenePueblo: {fileID: 3559281365279905334}
   isDefending: 0
   pauseMenuUI: {fileID: 4784633734452553382}
   mixer: {fileID: 24100000, guid: 20cd500f396d86c48bdbce21425753d2, type: 2}

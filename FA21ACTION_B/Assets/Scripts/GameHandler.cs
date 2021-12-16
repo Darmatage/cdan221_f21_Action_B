@@ -14,6 +14,7 @@ public class GameHandler : MonoBehaviour {
       public GameObject healthText;
 	  public GameObject ButtonSceneCaves;
 	  public GameObject ButtonSceneMarsh;
+	  public GameObject ButtonScenePueblo;
 
       //public static int gotTokens = 0;
       //public GameObject tokensText;
@@ -42,6 +43,7 @@ public class GameHandler : MonoBehaviour {
 		   pauseMenuUI.SetActive(false);
 		   ButtonSceneCaves.SetActive(false);
 		   ButtonSceneMarsh.SetActive(false);
+		   ButtonScenePueblo.SetActive(false);
             player = GameObject.FindWithTag("Player");
             playerHealth = StartPlayerHealth;
             updateStatsDisplay();       

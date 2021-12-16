@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 10
-  enemies:
+  Enemies:
     serializedVersion: 2
     m_Bits: 128
   paralysisType: spicy
