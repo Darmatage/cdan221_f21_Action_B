@@ -6,7 +6,7 @@ public class PickUp_Projectile : MonoBehaviour{
 	public float thrust = 10f;
     private Rigidbody2D rb2D;
 	
-	public LayerMask enemies;
+	public LayerMask Enemies;
 	public string paralysisType = "spicy";
 	
     public bool oneTimeThrow = true;
@@ -30,7 +30,7 @@ public class PickUp_Projectile : MonoBehaviour{
 	
 	//collide with enemy
 	public void OnCollisionEnter2D(Collision2D other){
-		if (other.gameObject.layer == enemies){
+		if (other.gameObject.layer == Enemies){
 			other.transform.GetComponent<EnemyMeleeDamage>().ParalizeEnemy(paralysisType);
 			Debug.Log("Food hit an enemy!");
 			Destroy(gameObject);

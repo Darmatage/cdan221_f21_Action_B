@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 8957160889614382491}
   - component: {fileID: 8957160889614382488}
   m_Layer: 7
-  m_Name: Enemy_Fish
+  m_Name: EnemyPatrol_Fish
   m_TagString: enemyShooter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,7 +80,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.013661027, y: -0.014116883}
+  m_Offset: {x: 0.013661027, y: 0.0042063296}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -91,7 +91,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1985505, y: 0.9557526}
+  m_Size: {x: 1.1985505, y: 0.9191062}
   m_EdgeRadius: 0
 --- !u!50 &8957160889614382492
 Rigidbody2D:
