@@ -53298,6 +53298,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogueLength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: Bring me a Taco from the "Caves" of molten cheese.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: Bring me Sushi from the "Marshes."
+      objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_Size.x
       value: 15.202469
