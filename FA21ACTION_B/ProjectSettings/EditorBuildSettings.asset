@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -25,11 +25,20 @@ EditorBuildSettings:
     guid: 71ae7ff422d99c54380d85955c7e0cd1
   - enabled: 1
     path: Assets/Scenes/Caves.unity
-    guid: 20ca39732fc7a5f448e4fb23e7200932
+    guid: f4b5b932e063e744ba210eff8fb4adb0
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Marsh.unity
-    guid: 41a2a87ae1f6a164393aa3d0988794de
+    guid: 4a5cef07f37384646a2636dfec7749c6
   - enabled: 1
     path: Assets/Scenes/Pueblo.unity
-    guid: eb0b9532ebdcc304db9ffb081de40f72
+    guid: d13799dad3d19dc47a4748d461363d43
   m_configObjects: {}
