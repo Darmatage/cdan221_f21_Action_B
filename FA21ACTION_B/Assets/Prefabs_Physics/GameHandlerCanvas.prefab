@@ -1137,10 +1137,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 22
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -1148,7 +1148,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HEAD BACK TO PUEBLO?
+  m_Text: "HEAD BACK \nTO PUEBLO?"
 --- !u!1 &2437315014136423530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3693,6 +3693,8 @@ MonoBehaviour:
   ButtonSceneCaves: {fileID: 6242811871390414560}
   ButtonSceneMarsh: {fileID: 8778307562918506193}
   ButtonScenePueblo: {fileID: 3559281365279905334}
+  backFromCaveStart: {x: 148, y: -7}
+  backFromMarshStart: {x: 160, y: 16}
   isDefending: 0
   pauseMenuUI: {fileID: 4784633734452553382}
   mixer: {fileID: 24100000, guid: 20cd500f396d86c48bdbce21425753d2, type: 2}
