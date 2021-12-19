@@ -38,11 +38,12 @@ public class GameHandler : MonoBehaviour {
 	private Slider sliderVolumeCtrl;
 
 	void Awake (){
+		player = GameObject.FindWithTag("Player");
 		sceneName = SceneManager.GetActiveScene().name;
 		if (sceneName == "Caves"){backFromCaves = true; playerMapStart= backFromCaveStart;}
 		if (sceneName == "Marsh"){backFromMarsh = true; playerMapStart= backFromMarshStart;}
 		if (sceneName == "Pueblo"){
-			player.transform.position = playerMapStart;
+			player.transform.position = new Vector2(playerMapStart.x, playerMapStart.y);
 			if (backFromCaves == true){backFromCaves = false;}
 			else if (backFromMarsh == true){backFromMarsh = false;}
 			else {}
@@ -56,12 +57,11 @@ public class GameHandler : MonoBehaviour {
 		}
 	}
 
-	void Start(){
+	void Start(){		
 		pauseMenuUI.SetActive(false);
 		ButtonSceneCaves.SetActive(false);
 		ButtonSceneMarsh.SetActive(false);
 		ButtonScenePueblo.SetActive(false);
-		player = GameObject.FindWithTag("Player");
 		playerHealth = StartPlayerHealth;
 		updateStatsDisplay();       
 	}
