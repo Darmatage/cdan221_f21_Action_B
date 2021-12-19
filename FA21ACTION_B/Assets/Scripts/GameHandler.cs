@@ -8,6 +8,9 @@ using UnityEngine.Audio;
 public class GameHandler : MonoBehaviour {
 
 	private GameObject player;
+	private GameObject cameraMain;
+	private GameObject skyBG;
+	
 	public static int playerHealth;
 	public int StartPlayerHealth = 100;
 	public GameObject healthText;
@@ -17,7 +20,7 @@ public class GameHandler : MonoBehaviour {
 
 	//location control
 	private string sceneName;
-	public Vector2 playerMapStart = new Vector2(-140, -6);
+	public static Vector2 playerMapStart = new Vector2(-140, -6);
 	public Vector2 backFromCaveStart = new Vector2(148,-7);
 	public Vector2 backFromMarshStart = new Vector2(160,16);
 	public static bool backFromCaves = false;
@@ -39,11 +42,17 @@ public class GameHandler : MonoBehaviour {
 
 	void Awake (){
 		player = GameObject.FindWithTag("Player");
+		cameraMain = GameObject.FindWithTag("MainCamera");
+		skyBG = GameObject.FindWithTag("Sky");
+		
 		sceneName = SceneManager.GetActiveScene().name;
-		if (sceneName == "Caves"){backFromCaves = true; playerMapStart= backFromCaveStart;}
-		if (sceneName == "Marsh"){backFromMarsh = true; playerMapStart= backFromMarshStart;}
+		if (sceneName == "Caves"){backFromCaves = true; playerMapStart= backFromCaveStart; Debug.Log("CavesStart");}
+		if (sceneName == "Marsh"){backFromMarsh = true; playerMapStart= backFromMarshStart; Debug.Log("MarshStart");}
 		if (sceneName == "Pueblo"){
+			Debug.Log("PlayerPos: " + playerMapStart);
 			player.transform.position = new Vector2(playerMapStart.x, playerMapStart.y);
+			cameraMain.transform.position = new Vector3(playerMapStart.x, playerMapStart.y, -10);
+			skyBG.transform.position = new Vector2(playerMapStart.x, playerMapStart.y);
 			if (backFromCaves == true){backFromCaves = false;}
 			else if (backFromMarsh == true){backFromMarsh = false;}
 			else {}
