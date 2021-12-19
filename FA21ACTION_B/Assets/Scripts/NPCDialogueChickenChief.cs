@@ -15,7 +15,7 @@ public class NPCDialogueChickenChief : MonoBehaviour{
 	public string[] dialogueE;
 	
 	private int dialogueLength;
-	private string[] theDialogue;
+	public static string[] theDialogue;
 	
 	public bool playerInRange = false;
 

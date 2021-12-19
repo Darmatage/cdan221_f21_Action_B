@@ -17,6 +17,7 @@ public class GameHandler : MonoBehaviour {
 	public GameObject ButtonSceneCaves;
 	public GameObject ButtonSceneMarsh;
 	public GameObject ButtonScenePueblo;
+	//note: accept and reject buttons are on GameInventory
 
 	//location control
 	private string sceneName;
@@ -26,13 +27,13 @@ public class GameHandler : MonoBehaviour {
 	public static bool backFromCaves = false;
 	public static bool backFromMarsh = false; 
 
-	//public static int gotTokens = 0;
-	//public GameObject tokensText;
-
+	//Don Chicote Dialogue
+	private NPCDialogueChickenChief DonChicote;
+		public GameObject ButtonAcceptOffer;
+		public GameObject ButtonRejectOffer;
+	public static bool finalOffer = false;
+		
 	public bool isDefending = false;
-
-	//public static bool stairCaseUnlocked = false;
-	//this is a flag check. Add to other scripts: GameHandler.stairCaseUnlocked = true;
 
 	public static bool GameisPaused = false;
 	public GameObject pauseMenuUI;
@@ -43,11 +44,26 @@ public class GameHandler : MonoBehaviour {
 	void Awake (){
 		player = GameObject.FindWithTag("Player");
 		cameraMain = GameObject.FindWithTag("MainCamera");
-		skyBG = GameObject.FindWithTag("Sky");
+		if (GameObject.FindWithTag("Sky")!=null){
+			skyBG = GameObject.FindWithTag("Sky");
+		}
+		if (GameObject.FindWithTag("DonChicote")!=null){
+			DonChicote = GameObject.FindWithTag("DonChicote").GetComponent<NPCDialogueChickenChief>();
+		}
 		
 		sceneName = SceneManager.GetActiveScene().name;
-		if (sceneName == "Caves"){backFromCaves = true; playerMapStart= backFromCaveStart; Debug.Log("CavesStart");}
-		if (sceneName == "Marsh"){backFromMarsh = true; playerMapStart= backFromMarshStart; Debug.Log("MarshStart");}
+		if (sceneName == "Caves"){
+			backFromCaves = true; 
+			playerMapStart= backFromCaveStart; 
+			//Debug.Log("CavesStart");
+			DonChicote.SetChiefDialogue("noTaco");
+			}
+		if (sceneName == "Marsh"){
+			backFromMarsh = true; 
+			playerMapStart= backFromMarshStart; 
+			//Debug.Log("MarshStart");
+			DonChicote.SetChiefDialogue("noSushi");
+			}
 		if (sceneName == "Pueblo"){
 			Debug.Log("PlayerPos: " + playerMapStart);
 			player.transform.position = new Vector2(playerMapStart.x, playerMapStart.y);
@@ -55,7 +71,7 @@ public class GameHandler : MonoBehaviour {
 			skyBG.transform.position = new Vector2(playerMapStart.x, playerMapStart.y);
 			if (backFromCaves == true){backFromCaves = false;}
 			else if (backFromMarsh == true){backFromMarsh = false;}
-			else {}
+			else {DonChicote.SetChiefDialogue("start");}
 		}
 		
 		SetLevel (volumeLevel);
@@ -71,72 +87,72 @@ public class GameHandler : MonoBehaviour {
 		ButtonSceneCaves.SetActive(false);
 		ButtonSceneMarsh.SetActive(false);
 		ButtonScenePueblo.SetActive(false);
+		
+			ButtonAcceptOffer.SetActive(false);
+			ButtonRejectOffer.SetActive(false);
+		
 		playerHealth = StartPlayerHealth;
 		updateStatsDisplay();       
 	}
 
-        void Update (){
-                if (Input.GetKeyDown(KeyCode.Escape)){
-                        if (GameisPaused){
-                                Resume();
-                        }
-                        else{
-                                Pause();
-                        }
-                }
-        }
-
-        void Pause(){
-                pauseMenuUI.SetActive(true);
-                Time.timeScale = 0f;
-                GameisPaused = true;
-        }
-
-        public void Resume(){
-                pauseMenuUI.SetActive(false);
-                Time.timeScale = 1f;
-                GameisPaused = false;
-        }
-
-        public void SetLevel (float sliderValue){
-                mixer.SetFloat("MusicVolume", Mathf.Log10 (sliderValue) * 20);
-                volumeLevel = sliderValue;
-        }
-
-		public void ButtonActiveCaves(){
-			ButtonSceneCaves.SetActive(true);
+	void Update (){
+		if (Input.GetKeyDown(KeyCode.Escape)){
+			if (GameisPaused){
+				Resume();
+			}
+			else{
+				Pause();
+			}
 		}
+	}
+
+	void Pause(){
+		pauseMenuUI.SetActive(true);
+		Time.timeScale = 0f;
+		GameisPaused = true;
+	}
+
+	public void Resume(){
+		pauseMenuUI.SetActive(false);
+		Time.timeScale = 1f;
+		GameisPaused = false;
+	}
+
+	public void SetLevel (float sliderValue){
+		mixer.SetFloat("MusicVolume", Mathf.Log10 (sliderValue) * 20);
+		volumeLevel = sliderValue;
+	}
+
+	public void ButtonActiveCaves(){
+		ButtonSceneCaves.SetActive(true);
+	}
 		
-		public void ButtonInactiveCaves(){
-			ButtonSceneCaves.SetActive(false);
-		}
+	public void ButtonInactiveCaves(){
+		ButtonSceneCaves.SetActive(false);
+	}
 		
-			
-
-
-
       //public void playerGetTokens(int newTokens){
       //      gotTokens += newTokens;
       //      updateStatsDisplay();
       //}
 
-      public void playerGetHit(int damage){
-           if (isDefending == false){
-                  playerHealth -= damage;
+	public void playerGetHit(int damage){
+		if (isDefending == false){
+			playerHealth -= damage;
 				  
-				if (playerHealth >= StartPlayerHealth){
-                  playerHealth = StartPlayerHealth;
-				}
+			if (playerHealth >= StartPlayerHealth){
+				playerHealth = StartPlayerHealth;
+			}
 				  
-				if (playerHealth <= 0){
-                  playerHealth = 0;
-                  playerDies();
-				}
+			if (playerHealth <= 0){
+				playerHealth = 0;
+				playerDies();
+			}
 				  
-                  updateStatsDisplay();
-                  player.GetComponent<PlayerHurt>().playerHit();
-            }
-      }
+			updateStatsDisplay();
+			player.GetComponent<PlayerHurt>().playerHit();
+		}
+	}
 
       public void updateStatsDisplay(){
             Text healthTextTemp = healthText.GetComponent<Text>();
@@ -192,4 +208,21 @@ public class GameHandler : MonoBehaviour {
 	  public void ChangeScenePueblo() {
 		  SceneManager.LoadScene("Pueblo");
 	  }
+	  
+	  
+	public void DisplayOfferButtons(){
+		if (finalOffer == true){
+			ButtonAcceptOffer.SetActive(true);
+			ButtonRejectOffer.SetActive(true);
+		}
+	}
+	  
+	  public void ChangeSceneAccept() {
+		  SceneManager.LoadScene("End_Win");
+	  }
+	  
+	  public void ChangeSceneReject() {
+		  SceneManager.LoadScene("End_Win");
+	  }
+	  
 }

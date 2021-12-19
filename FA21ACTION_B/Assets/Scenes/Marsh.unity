@@ -113684,6 +113684,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a07cceac95b70b140aa2cbdeb3fada00, type: 3}
+--- !u!1001 &2031226372
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8254891491408543654, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
+      propertyPath: m_Name
+      value: NPC_DonChicote_DO_NOT_DELETE
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254891491408543657, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254891491408543657, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 67.6637
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254891491408543657, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -136.03506
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254891491408543657, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.434688
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254891491408543657, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254891491408543657, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254891491408543657, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254891491408543657, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254891491408543657, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254891491408543657, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8254891491408543657, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fab569ed374007249a064a64d9cd31f9, type: 3}
 --- !u!1 &2071006667
 GameObject:
   m_ObjectHideFlags: 0
@@ -113698,7 +113755,7 @@ GameObject:
   - component: {fileID: 2071006668}
   m_Layer: 0
   m_Name: MarshSky
-  m_TagString: Untagged
+  m_TagString: Sky
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

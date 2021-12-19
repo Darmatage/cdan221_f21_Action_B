@@ -22,7 +22,6 @@ public class GameInventory : MonoBehaviour {
 	
 	//5 Inventory Items (Bools, Number, Images, Text):
 	
-	
 	//item bools
 	private static bool healIng1bool = false; // flour
 	private static bool healIng2bool = false; // apples
@@ -94,7 +93,6 @@ public class GameInventory : MonoBehaviour {
 	public GameObject sushiIng3image;
 	public GameObject sushiButton;
 
-
 	//amount texts
 	public GameObject healIng1Txt;
 	public GameObject healIng2Txt;
@@ -119,6 +117,16 @@ public class GameInventory : MonoBehaviour {
 	public GameObject thePlayer;
 	public int healingAmt = 10;
 
+	//Don Chicote Dialogue
+	private NPCDialogueChickenChief DonChicote;
+
+
+
+	void Awake(){
+		if (GameObject.FindWithTag("DonChicote")!=null){
+			DonChicote = GameObject.FindWithTag("DonChicote").GetComponent<NPCDialogueChickenChief>();
+		}		
+	}
 
     public void Start(){
 		InventoryDisplay();	  
@@ -128,6 +136,7 @@ public class GameInventory : MonoBehaviour {
 		ButtonTaco.SetActive(false);
 		ButtonSushi.SetActive(false);
 
+
 		//gameHandler = transform.GetComponent<GameHandler>();
 		if (GameObject.FindGameObjectWithTag ("Player") != null) {
 			thePlayer = GameObject.FindGameObjectWithTag ("Player");
@@ -135,7 +144,6 @@ public class GameInventory : MonoBehaviour {
     }
 
 	void Update(){
-		
 		if ((healIng1Num >= 1) && (healIng2Num >= 1) && (healIng3Num >= 1)){
 			ButtonHealingPie.SetActive(true);}
 		else {ButtonHealingPie.SetActive(false);}
@@ -157,7 +165,6 @@ public class GameInventory : MonoBehaviour {
 		//if (Input.GetKeyDown("3")){LoadFood("meatball");}
 		
 		if (Input.GetKeyDown("m")){CookBookMenu.SetActive(!CookBookMenu.activeSelf);}
-		
 	}
 
 
@@ -292,6 +299,7 @@ public class GameInventory : MonoBehaviour {
 		InventoryRemove("lettuce");
 		InventoryRemove("tomato");
 		InventoryAdd("taco");
+		DonChicote.SetChiefDialogue("Taco");
 	}
 	
 	public void CookSushi(){
@@ -299,6 +307,8 @@ public class GameInventory : MonoBehaviour {
 		InventoryRemove("seaweed");
 		InventoryRemove("rice");
 		InventoryAdd("sushi");
+		DonChicote.SetChiefDialogue("Sushi");
+		GameHandler.finalOffer = true;
 	}
 
 

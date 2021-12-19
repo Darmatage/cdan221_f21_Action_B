@@ -12,10 +12,16 @@ public class NPCDialogueManager : MonoBehaviour
 	public int counter = 0;
 	public int dialogueLength;
 	
+	private GameHandler gameHandler; 
+	
     // Start is called before the first frame update
     void Start(){
 		dialogueBox.SetActive(false);
         dialogueLength = dialogue.Length;
+		
+		if (GameObject.FindWithTag("GameHandler") != null){
+			gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
+		}
     }
 
 	void Update(){
@@ -55,6 +61,7 @@ public class NPCDialogueManager : MonoBehaviour
 			dialogueBox.SetActive(false);	//when lines complete
 			dialogueText.text = "..."; 		//reset text
 			counter = 0;					//reset counter
+			gameHandler.DisplayOfferButtons();
 		}
     }
 	
