@@ -7,47 +7,64 @@ using UnityEngine.Audio;
 
 public class GameHandler : MonoBehaviour {
 
+	private GameObject player;
+	public static int playerHealth;
+	public int StartPlayerHealth = 100;
+	public GameObject healthText;
+	public GameObject ButtonSceneCaves;
+	public GameObject ButtonSceneMarsh;
+	public GameObject ButtonScenePueblo;
 
-      private GameObject player;
-      public static int playerHealth;
-      public int StartPlayerHealth = 100;
-      public GameObject healthText;
-	  public GameObject ButtonSceneCaves;
-	  public GameObject ButtonSceneMarsh;
-	  public GameObject ButtonScenePueblo;
+	//location control
+	private string sceneName;
+	public Vector2 playerMapStart = new Vector2(-140, -6);
+	public Vector2 backFromCaveStart = new Vector2(148,-7);
+	public Vector2 backFromMarshStart = new Vector2(160,16);
+	public static bool backFromCaves = false;
+	public static bool backFromMarsh = false; 
 
-      //public static int gotTokens = 0;
-      //public GameObject tokensText;
+	//public static int gotTokens = 0;
+	//public GameObject tokensText;
 
-      public bool isDefending = false;
+	public bool isDefending = false;
 
-      //public static bool stairCaseUnlocked = false;
-      //this is a flag check. Add to other scripts: GameHandler.stairCaseUnlocked = true;
+	//public static bool stairCaseUnlocked = false;
+	//this is a flag check. Add to other scripts: GameHandler.stairCaseUnlocked = true;
 
-        public static bool GameisPaused = false;
-        public GameObject pauseMenuUI;
-        public AudioMixer mixer;
-        public static float volumeLevel = 1.0f;
-        private Slider sliderVolumeCtrl;
+	public static bool GameisPaused = false;
+	public GameObject pauseMenuUI;
+	public AudioMixer mixer;
+	public static float volumeLevel = 1.0f;
+	private Slider sliderVolumeCtrl;
 
-        void Awake (){
-                SetLevel (volumeLevel);
-                GameObject sliderTemp = GameObject.FindWithTag("PauseMenuSlider");
-                if (sliderTemp != null){
-                        sliderVolumeCtrl = sliderTemp.GetComponent<Slider>();
-                        sliderVolumeCtrl.value = volumeLevel;
-                }
-        }
+	void Awake (){
+		sceneName = SceneManager.GetActiveScene().name;
+		if (sceneName == "Caves"){backFromCaves = true; playerMapStart= backFromCaveStart;}
+		if (sceneName == "Marsh"){backFromMarsh = true; playerMapStart= backFromMarshStart;}
+		if (sceneName == "Pueblo"){
+			player.transform.position = playerMapStart;
+			if (backFromCaves == true){backFromCaves = false;}
+			else if (backFromMarsh == true){backFromMarsh = false;}
+			else {}
+		}
+		
+		SetLevel (volumeLevel);
+		GameObject sliderTemp = GameObject.FindWithTag("PauseMenuSlider");
+		if (sliderTemp != null){
+			sliderVolumeCtrl = sliderTemp.GetComponent<Slider>();
+			sliderVolumeCtrl.value = volumeLevel;
+		}
+	}
 
-      void Start(){
-		   pauseMenuUI.SetActive(false);
-		   ButtonSceneCaves.SetActive(false);
-		   ButtonSceneMarsh.SetActive(false);
-		   ButtonScenePueblo.SetActive(false);
-            player = GameObject.FindWithTag("Player");
-            playerHealth = StartPlayerHealth;
-            updateStatsDisplay();       
-      }
+	void Start(){
+		pauseMenuUI.SetActive(false);
+		ButtonSceneCaves.SetActive(false);
+		ButtonSceneMarsh.SetActive(false);
+		ButtonScenePueblo.SetActive(false);
+		player = GameObject.FindWithTag("Player");
+		playerHealth = StartPlayerHealth;
+		updateStatsDisplay();       
+	}
 
         void Update (){
                 if (Input.GetKeyDown(KeyCode.Escape)){

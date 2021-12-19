@@ -26,9 +26,9 @@ public class EnemyMeleeDamage : MonoBehaviour {
 	public void ParalizeEnemy(string pType){
 		if (pType == "spicy"){
 			//anim.setBool("ParalizedSpicy", true);
-			enemyFrozen = true;
+			//enemyFrozen = true;
 			//turn off enemy movement: have the script look to this script 
-			   
+			Die();   
 		}
 		   
 		else if (pType == "freeze"){

@@ -145,7 +145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5719470320867409529}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5719470321900471915}
   - component: {fileID: 5719470321900471914}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Apple_Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -152,7 +152,7 @@ public class GameInventory : MonoBehaviour {
 			ButtonSushi.SetActive(true);}
 		else {ButtonSushi.SetActive(false);}
 
-		if (Input.GetKeyDown("1")){ServeSpicyAttack();}
+		if ((Input.GetKeyDown("1"))&&(spicybool==true)){ServeSpicyAttack();}
 		//if (Input.GetKeyDown("2")){LoadFood("icecream");}
 		//if (Input.GetKeyDown("3")){LoadFood("meatball");}
 		
