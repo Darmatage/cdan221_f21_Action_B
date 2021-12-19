@@ -38641,7 +38641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38796,6 +38796,148 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b292d895f057c0a43a062e2f5e18ec96, type: 3}
+--- !u!1001 &370288778
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 422681729}
+    m_Modifications:
+    - target: {fileID: 6845847561121666086, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Name
+      value: NPC_DonChicote3Taco
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666086, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogueLength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: Why... this is the most delicious taco I have ever tasted!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: Truly, the tortilla is sublime!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: The lettuce is heavenly!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[3]
+      value: I am all a-cluck with joy!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[4]
+      value: You have my permission to enter our sacred marshland.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[5]
+      value: Bring me back Sushi worthy of a king!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[6]
+      value: Then we'll see if you're worthy of being the greatest chef in the galaxy...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Size.x
+      value: 15.202469
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Size.y
+      value: 10.956084
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.26667786
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Offset.y
+      value: -2.7574878
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 215.0697
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.990232
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.434688
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802818, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802818, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bee65ffbcb7e00b46b8348d49045dc92, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+--- !u!4 &370288779 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+  m_PrefabInstance: {fileID: 370288778}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &422681728
 GameObject:
   m_ObjectHideFlags: 0
@@ -38824,7 +38966,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2078355198}
+  - {fileID: 6581408181761298290}
   - {fileID: 2124641913}
+  - {fileID: 892810422}
+  - {fileID: 370288779}
+  - {fileID: 747291311}
+  - {fileID: 993692493}
   - {fileID: 1936139132}
   - {fileID: 1305097795}
   - {fileID: 556838573}
@@ -39177,7 +39324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39495,6 +39642,148 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &747291310
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 422681729}
+    m_Modifications:
+    - target: {fileID: 6845847561121666086, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Name
+      value: NPC_DonChicote4noSushi
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666086, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogueLength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: Oh? Did you want something?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: Were our sacred marshlands to challenging for you?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: If not, where is my Sushi?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[3]
+      value: If not, where is my Taco?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[4]
+      value: Bring me a Taco from the "Caves" of molten cheese.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[5]
+      value: Then bring me Sushi from the "Marshes."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[6]
+      value: Then we'll see if you're worthy of being the greatest chef in the galaxy...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Size.x
+      value: 15.202469
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Size.y
+      value: 10.956084
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.26667786
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Offset.y
+      value: -2.7574878
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 215.0697
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.990232
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.434688
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802818, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802818, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bee65ffbcb7e00b46b8348d49045dc92, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+--- !u!4 &747291311 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+  m_PrefabInstance: {fileID: 747291310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &792119251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40181,6 +40470,148 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &892810421
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 422681729}
+    m_Modifications:
+    - target: {fileID: 6845847561121666086, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Name
+      value: NPC_DonChicote2noTaco
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666086, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogueLength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: Yes? Who are you again?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: Oh, right. The little chef with delusions of grandeur.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: I suppose our caves were too difficult for you?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[3]
+      value: If not, where is my Taco?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[4]
+      value: Bring me a Taco from the "Caves" of molten cheese.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[5]
+      value: Then bring me Sushi from the "Marshes."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[6]
+      value: Then we'll see if you're worthy of being the greatest chef in the galaxy...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Size.x
+      value: 15.202469
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Size.y
+      value: 10.956084
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.26667786
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Offset.y
+      value: -2.7574878
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 215.0697
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.990232
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.434688
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802818, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802818, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bee65ffbcb7e00b46b8348d49045dc92, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+--- !u!4 &892810422 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+  m_PrefabInstance: {fileID: 892810421}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &904876784 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6223523428182248606, guid: 03547290548c01d40b26a4c6a7306f64, type: 3}
@@ -41414,6 +41845,148 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   camSpeed: 4
+--- !u!1001 &993692492
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 422681729}
+    m_Modifications:
+    - target: {fileID: 6845847561121666086, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Name
+      value: NPC_DonChicote5Sushi
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666086, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogueLength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: This sushi is superb!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: The fish positively melts in my beak!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: The rice and seaweed are perfection
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[3]
+      value: You are the greatest of all Chefs!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[4]
+      value: Please , stay and become my personal chef!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: dialogue.Array.data[6]
+      value: Then we'll see if you're worthy of being the greatest chef in the galaxy...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Size.x
+      value: 15.202469
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Size.y
+      value: 10.956084
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.26667786
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666088, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Offset.y
+      value: -2.7574878
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 215.0697
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.990232
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.434688
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802817, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802818, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6845847563116802818, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bee65ffbcb7e00b46b8348d49045dc92, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+--- !u!4 &993692493 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
+  m_PrefabInstance: {fileID: 993692492}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1028863606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5091727071263071558, guid: b292d895f057c0a43a062e2f5e18ec96, type: 3}
@@ -56338,7 +56911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56658,7 +57231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56764,7 +57337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57038,11 +57611,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6845847561121666086, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_Name
-      value: NPC_chat(DonChicote)
+      value: NPC_DonChicote1intro
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666086, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666087, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: dialogueLength
@@ -57098,7 +57671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6845847561121666089, guid: cb89054de983ec04e8abe341af63ef4e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57492,6 +58065,191 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 303222ec5331c38489ae81fff64389b8, type: 3}
+--- !u!4 &6581408181761298290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6581408181761298301}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 215.0697, y: 18.990232, z: 9.434688}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6581408182950045786}
+  m_Father: {fileID: 422681729}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &6581408181761298291
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6581408181761298301}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.26667786, y: -2.7574878}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.202469, y: 10.956084}
+  m_EdgeRadius: 0
+--- !u!1 &6581408181761298301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6581408181761298290}
+  - component: {fileID: 6581408181761298291}
+  - component: {fileID: 6581408181761298302}
+  m_Layer: 0
+  m_Name: NPC_DonChicote
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &6581408181761298302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6581408181761298301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec3696ce138d9f4898253d320c07eb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueA:
+  - Hmmm?
+  - Oh? You want to be the greatest chef in the galaxy?
+  - Heh, ok then, you'll have to prove it to me then!
+  - The great DonChicote!
+  - Bring me a Taco from the "Caves" of molten cheese.
+  - Then bring me Sushi from the "Marshes."
+  - Then we'll see if you're worthy of being the greatest chef in the galaxy...
+  dialogueB:
+  - Yes? Who are you again?
+  - Oh, right. The little chef with delusions of grandeur.
+  - I suppose our caves were too difficult for you?
+  - If not, where is my Taco?
+  dialogueC:
+  - Why... this is the most delicious taco I have ever tasted!
+  - Truly, the tortilla is sublime!
+  - The lettuce is heavenly!
+  - I am all a-cluck with joy!
+  - You have my permission to enter our sacred marshland.
+  - Bring me back Sushi worthy of a king!
+  dialogueD:
+  - Oh? Did you want something?
+  - Were our sacred marshlands to challenging for you?
+  - If not, where is my Sushi?
+  dialogueE:
+  - This sushi is superb!
+  - The fish positively melts in my beak!
+  - The rice and seaweed are perfection
+  - You are the greatest of all Chefs!
+  - Please , stay and become my personal chef!
+  playerInRange: 0
+--- !u!212 &6581408182950045785
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6581408182950045787}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 90
+  m_Sprite: {fileID: 21300000, guid: bee65ffbcb7e00b46b8348d49045dc92, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &6581408182950045786
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6581408182950045787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.42, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6581408181761298290}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6581408182950045787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6581408182950045786}
+  - component: {fileID: 6581408182950045785}
+  m_Layer: 0
+  m_Name: NPC_art
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &6946282037127192708 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 109142227317913502, guid: 7f74f5ee83416904583fe2380c488a17, type: 3}
