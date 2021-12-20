@@ -274,7 +274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.999985, y: -109}
+  m_AnchoredPosition: {x: -13.999985, y: -11}
   m_SizeDelta: {x: 600, y: 72.184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &810117645835407906
@@ -1992,7 +1992,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3165518052328593189
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5788,7 +5788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14, y: -11}
+  m_AnchoredPosition: {x: -14, y: -131}
   m_SizeDelta: {x: 600, y: 72.184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2796632713312572801
@@ -8748,6 +8748,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8408417542220812950, guid: f4a230ebbecf34b4281f72b24bca0c1a, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408417542220812950, guid: f4a230ebbecf34b4281f72b24bca0c1a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b73a16b3f524f6c409d6f7f69a958225, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4a230ebbecf34b4281f72b24bca0c1a, type: 3}
 --- !u!4 &6006098698650734411 stripped

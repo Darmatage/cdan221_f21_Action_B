@@ -84,6 +84,7 @@ MonoBehaviour:
   - Oh, right. The little chef with delusions of grandeur.
   - I suppose our caves were too difficult for you?
   - If not, where is my Taco?
+  - Leave my podium and return with Taco!
   dialogueC:
   - Why... this is the most delicious taco I have ever tasted!
   - Truly, the tortilla is sublime!
@@ -95,6 +96,7 @@ MonoBehaviour:
   - Oh? Did you want something?
   - Were our sacred marshlands to challenging for you?
   - If not, where is my Sushi?
+  - Leave my podium and return with Sushi!
   dialogueE:
   - This sushi is superb!
   - The fish positively melts in my beak!
