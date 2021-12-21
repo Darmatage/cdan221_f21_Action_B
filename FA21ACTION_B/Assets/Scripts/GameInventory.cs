@@ -329,12 +329,12 @@ public class GameInventory : MonoBehaviour {
 
 	public void ServeTaco(){
 		Debug.Log("You Serve Tacos!");
-		InventoryRemove("taco");
+		//InventoryRemove("taco");
 	}
 	
 	public void ServeSushi(){
 		Debug.Log("You Serve Sushi!");
-		InventoryRemove("sushi");
+		//InventoryRemove("sushi");
 	}
 
 }
