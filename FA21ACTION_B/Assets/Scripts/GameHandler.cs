@@ -11,7 +11,7 @@ public class GameHandler : MonoBehaviour {
 	private GameObject cameraMain;
 	private GameObject skyBG;
 	
-	public static int playerHealth;
+	public static int playerHealth = 100;
 	public int StartPlayerHealth = 100;
 	public GameObject healthText;
 	public GameObject ButtonSceneCaves;
@@ -88,10 +88,12 @@ public class GameHandler : MonoBehaviour {
 		ButtonSceneMarsh.SetActive(false);
 		ButtonScenePueblo.SetActive(false);
 		
-			ButtonAcceptOffer.SetActive(false);
-			ButtonRejectOffer.SetActive(false);
+		ButtonAcceptOffer.SetActive(false);
+		ButtonRejectOffer.SetActive(false);
 		
-		playerHealth = StartPlayerHealth;
+		if (sceneName == "MainMenu"){
+			playerHealth = StartPlayerHealth;	
+		}
 		updateStatsDisplay();       
 	}
 
